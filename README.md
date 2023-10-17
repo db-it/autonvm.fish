@@ -22,13 +22,13 @@ This is a pure fish implementation and therefore no bash converting tools are re
 
 Requires [nvm.fish](https://github.com/jorgebucaran/nvm.fish/tree/main#installation):
 
-```console
+```sh
 fisher install jorgebucaran/nvm.fish
 ```
 
 Install with [Fisher](https://github.com/jorgebucaran/fisher):
 
-```console
+```sh
 fisher install db-it/autonvm.fish
 ```
 
@@ -41,3 +41,15 @@ Otherwise, you will be asked to install the required version.
 
 If none of the files is found in the current directory, `autonvm.fish` moves up the directory tree until one is found. 
 Otherwise, the default version is used if it is set.
+
+## Debugging
+
+Enable debug outputs for current shell session:
+```sh
+set autonvm_debug 1
+```
+
+Disable debug outputs for current shell session:
+```sh
+set -e autonvm_debug
+```
